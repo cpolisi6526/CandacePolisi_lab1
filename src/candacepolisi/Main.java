@@ -42,7 +42,7 @@ public class Main {
      }
      if (game.equals("b")){
          double num= Math.random();
-         int num1= 100*num;
+         int num1= 100num;
          System.out.println("guess the secret number 1-100");
          int guess = input.nextInt();
          while ((guess > num1) || (guess < num1)) {
