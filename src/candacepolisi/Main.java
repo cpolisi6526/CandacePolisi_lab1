@@ -16,7 +16,6 @@ public class Main {
         int min = 1;
         int max = 100;
         int guess;
-
         System.out.println("think of a number 1-100. Okay? Now let me try to guess it.");
         while (!(response.equals("correct"))) {
             guess = (min + max) / 2;
@@ -27,11 +26,11 @@ public class Main {
                     System.out.println("yay i knew your number was  " + guess);
                 } else {
                     if (response.equals("higher")) {
-                        System.out.println("darn let me guess again");
+                        System.out.println("darn let me guess again,  " + name);
                         min = guess;
                     }
                     if (response.equals("lower")) {
-                        System.out.println("darn let me guess again");
+                        System.out.println("darn let me guess again,  " + name);
                         max = guess;
                     }
                 }
@@ -40,19 +39,19 @@ public class Main {
             }
         }
      }
-     if (game.equals("b")){
+     else if (game.equals("b")){
          double num= Math.random();
-         int num1= 100num;
-         System.out.println("guess the secret number 1-100");
+         int num1= (int) (100*num);
+         System.out.println("guess the secret number 1-100, " + name);
          int guess = input.nextInt();
          while ((guess > num1) || (guess < num1)) {
-             System.out.println("guess again noob");
+             System.out.println("guess again noob... oops I meant  " + name);
              guess = input.nextInt();
          }
          System.out.println("You got it dude! The number was indeed  " + num1);
      }
      else{
-         System.out.println("not a valid input type either a or b ");
+         System.out.println("cmon,  " + name + "  not a valid input play again and type either a or b ");
      }
         }
 
